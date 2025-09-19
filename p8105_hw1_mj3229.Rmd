@@ -12,3 +12,24 @@ library(moderndive)
 data("early_january_weather")
 ```
 
+## Analyzing the data
+The early_january_weather data set contains information on the different aspects of weather in the EWR region throughout different hours of the day. 
+**origin**(weather station)
+**year**(which year the weather is being observed in)
+**month**(which month the weather is being observed in)
+**day**(which day the weather is being observed in)
+**hour**(which hour the weather is being observed in)
+**temp**(observed temperature in F)
+**dewp**(dewpoint in F)
+**humid**(relative humidity)
+**wind_dir**(wind direction in degrees)
+**wind_speed**(speed and gust speed in mph)
+**precip**(precipitation in inches)
+**pressure**(sea level pressure in millibars)
+**visib**(visibility in miles)
+**time_hour**(date and hour of the recording)
+
+
+The dataset has a total of `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
+The mean temperature is `r mean(early_january_weather$temp)`
+
