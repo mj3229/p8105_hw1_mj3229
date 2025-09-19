@@ -1,21 +1,14 @@
 ---
-title: "Simple document"
-output: html_document
+title: "Homework One"
+author: Mahitha Jangeti
+date: September 20 2025
+output: github_document
 ---
+##Problem 1
 
-I'm an R Markdown document! 
-
-# Section 1
-
-Here's a **code chunk** that samples from 
-a _normal distribution_:
-
+## Loading the Dataset
 ```{r}
-samp = rnorm(100)
-length(samp)
+library(moderndive)
+data("early_january_weather")
 ```
 
-# Section 2
-
-I can take the mean of the sample, too!
-The mean is `r mean(samp)`.
