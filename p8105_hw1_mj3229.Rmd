@@ -13,7 +13,7 @@ data("early_january_weather")
 ```
 
 ## Analyzing the data
-The early_january_weather data set contains information on the different aspects of weather in the region, rpeorted by EWR, throughout different hours of the day. 
+The early_january_weather data set contains information on the different aspects of weather in the region, reported by EWR, throughout different hours of the day. 
 **origin** (weather station)
 **temp** (observed temperature in F)
 **dewp** (dewpoint in F)
@@ -70,10 +70,11 @@ _Mean does not work for vec_factor because this value is not numeric or logical.
 mean(pull(homework_df, vec_factor))
 ```
 
-##Converting Variables 
+## Converting Variables 
 ```{r results='hide'}
 as.numeric(homework_df$vec_logical)
 as.numeric(homework_df$vec_factor)
 as.numeric(homework_df$vec_char)
 ```
-**Character** variables **cannot** be converted into a numerical value while **factor** and **logical** variables **can be** converted into numerical values as logical variables turned into 1 or 0 indicating TRUE and FALSE respectively.**Factor** can be converted to numeric as they are stored internally as integers. 
+**Character** variables **cannot** be converted into a numerical value while **factor** and **logical** variables **can be** converted into numerical values as logical variables turned into 1 or 0 indicating TRUE and FALSE respectively. **Factor** can be converted to numeric as they are stored internally as integers. 
+
