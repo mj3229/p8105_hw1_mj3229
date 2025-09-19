@@ -4,7 +4,7 @@ author: Mahitha Jangeti
 date: September 20 2025
 output: github_document
 ---
-##Problem 1
+## Problem 1
 
 ## Loading the Dataset
 ```{r}
@@ -31,4 +31,23 @@ The mean temperature is `r mean(early_january_weather$temp)`
 ```{r}
 library(tidyverse)
 ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geom_point()
+ggsave("HW1_Scatterplot.pdf", height = 4, width = 6)
 ```
+
+## Problem 2
+
+## Creating a dataframe
+```{r}
+homework_df = 
+  tibble(
+  norm_samp = rnorm(10, mean = 0, sd = 1),
+  vec_logical = norm_samp > 0,
+  vec_char = c("a", "b", "c" , "d", "e", "f", "g", "h", "i", "j"),
+  vec_factor = factor(c("low", "medium", "high",
+                        "low", "medium", "high",
+                        "low", "medium", "high",
+                        "low")),
+)
+homework_df
+```
+
