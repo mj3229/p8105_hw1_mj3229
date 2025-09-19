@@ -34,6 +34,8 @@ ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geo
 ggsave("HW1_Scatterplot.pdf", height = 4, width = 6)
 ```
 
+_This plot is showing how temperature has fluctuated over time and throughout the day. Generally, we see an upwards trend as we move through the chart. There is however major fluctuation throughout the day with temperatures rising and dropping by the hour. Humidity seems to be higher in higher temperatures and vice versa._
+
 ## Problem 2
 
 ## Creating a dataframe
