@@ -51,3 +51,22 @@ homework_df =
 homework_df
 ```
 
+## Mean of each variable
+```{r}
+mean(pull(homework_df, norm_samp))
+```
+
+```{r}
+mean(pull(homework_df, vec_logical))
+```
+
+_Mean does not work for vec_char because this value is not numeric or logical_
+```{r}
+mean(pull(homework_df, vec_char))
+```
+
+_Mean does not work for vec_factor because this value is not numeric or logical. Can be converted to find mean_
+```{r}
+mean(pull(homework_df, vec_factor))
+```
+
